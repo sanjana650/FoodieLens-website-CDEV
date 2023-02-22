@@ -1,0 +1,86 @@
+.navbar-custom {
+  background-color: #C3E3E2;
+}
+/* Modify brand and text color can ignore cuz its an image rn */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: grey;
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+  color: grey;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: black;
+}
+.navbar-custom .dropdown-menu{
+  background-color: #99CCCB
+}
+
+.navbar-custom .dropdown-item {
+  color: grey;
+}
+
+.navbar-custom .dropdown-item:hover,
+.navbar-custom .dropdown-item:focus {
+  color: #191919;
+  background-color:  #8ebcbb;
+}
+
+/*idk if it works */
+.navbar-toggler{
+  color:black;
+}
+
+.carousel-item {
+  height: 600px;
+  object-fit: contain;
+  object-position: 50%;
+
+}
+
+footer {
+  background: #aaa;
+  color: white;
+  }
+  .edit {
+  float: right;
+  padding-right: 10px;
+  }
+
+/* search bar */
+.search{
+  background-color: #C3E3E2;
+  border-radius: 10px;
+  
+}
+
+.button-custom{
+  background-color: #8ebcbb;
+
+}
+
+
+.modal-custom{
+  background-color:#C3E3E2;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mapFunc{
+  object-fit: contain;
+  object-position: 50%;
+}

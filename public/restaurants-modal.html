@@ -1,0 +1,130 @@
+<!-- this is a structure of Bootstrap Modal -->
+<div class="modal fade" id="restaurantsModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h3
+          class="modal-title text-light font-weight-bold"
+          id="restaurantTitle"
+        >
+          Modal title
+        </h3>
+      </div>
+      <!--modal-custom is used to change bg color of modal-->
+      <div class="modal-body modal-custom">
+        <div class="row text-center">
+          <div class="col-5">
+            <img class="img-fluid img-thumbnail" id="restaurantLogo" />
+          </div>
+          <div class="col-7">
+            <table class="table table-hover table-responsive table-sm">
+              <tr>
+                <td>
+                  <h5>
+                    <span
+                      class="badge badge-secondary badge-dark font-weight-bold"
+                      >Cuisine</span
+                    >
+                  </h5>
+                </td>
+                <td id="cuisine"></td>
+              </tr>
+              <tr>
+                <td>
+                  <h5>
+                    <span
+                      class="badge badge-secondary badge-dark font-weight-bold"
+                      >Price Range</span
+                    >
+                  </h5>
+                </td>
+                <td
+                  id="priceRange"
+                  style="
+                    width: 200px;
+                    word-break: break-all;
+                    word-wrap: break-word;
+                  "
+                ></td>
+              </tr>
+              <tr>
+                <td>
+                  <h5>
+                    <span
+                      class="badge badge-secondary badge-dark font-weight-bold"
+                      >Telephone Number</span
+                    >
+                  </h5>
+                </td>
+                <td id="telephoneNumber"></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <h5>
+                    <span
+                      class="badge badge-secondary badge-dark font-weight-bold"
+                      >Location</span
+                    >
+                  </h5>
+                </td>
+                <td id="location"></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <h5>
+                    <span
+                      class="badge badge-secondary badge-dark font-weight-bold"
+                      >Address</span
+                    >
+                  </h5>
+                </td>
+                <td id="address"></td>
+              </tr>
+
+                <td colspan="2">
+                  <button
+                    type="button"
+                    class="btn btn-warning"
+                    id="website"
+                    onClick="redirectWebsite()"
+                  >
+                    Visit restaurant's website
+                  </button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <br></br>
+        <!-- for map function -->
+        <tr>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.706863468221!2d103.9425918501077!3d1.3524382990087815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da3d1197cb1cdb%3A0xad4baec69ca0f989!2s4%20Tampines%20Central%205%2C%20%2304%20-%2021%20%2F%2022%2C%20Singapore%20529510!5e0!3m2!1sen!2ssg!4v1675571937714!5m2!1sen!2ssg"
+            width="770"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            id="mapFunc"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        
+        <tr>
+
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary bg-dark"
+            data-dismiss="modal"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

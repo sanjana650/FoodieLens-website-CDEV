@@ -1,0 +1,32 @@
+<!-- this is a structure of Bootstrap Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-body px-5">
+        <form>
+          
+          <div class="form-group">
+            <label for="InputUsername">Username</label>
+            <input type="username" class="form-control" id="username"  placeholder="Enter username">
+          </div>
+          <div class="form-group">
+            <label for="InputEmail1">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="InputPassword1">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="InputPassword2">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmPassword" placeholder="Password">
+          </div>
+        
+          <button onClick="registerMe()" type="button" class="btn btn-primary">Register</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
